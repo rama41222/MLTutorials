@@ -99,3 +99,9 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+#stop idea
+.idea
+
+#stop osx files
+.DS_STORE
