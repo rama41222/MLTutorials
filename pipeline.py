@@ -43,3 +43,20 @@ print(prediction_k)
 
 #calculate our accuracy
 print(accuracy_score(y_test, prediction_k))
+
+
+
+#custom random classifier
+from custom_classifier import  CustomRandomKNN
+
+
+my_custom_classifier = CustomRandomKNN()
+my_custom_classifier.fit(x_train, y_train)
+
+#predictions
+prediction_custom_k = my_custom_classifier.predict(x_test)
+print(prediction_custom_k)
+
+#calculate our accuracy
+print(accuracy_score(y_test, prediction_custom_k))
+
