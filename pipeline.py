@@ -60,3 +60,17 @@ print(prediction_custom_k)
 #calculate our accuracy
 print(accuracy_score(y_test, prediction_custom_k))
 
+
+#custom simple kneighbor algorithm k = 1
+
+from simple_kneighbor import SimpleKNeighbor
+
+my_simple_kneighbor_classifier = SimpleKNeighbor()
+my_simple_kneighbor_classifier.fit(x_train, y_train)
+
+#prediction
+prediction_simple_kneighbor = my_simple_kneighbor_classifier.predict(x_test)
+print(prediction_simple_kneighbor)
+
+#calculate accuracy
+print(accuracy_score(y_test, prediction_simple_kneighbor))
